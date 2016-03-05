@@ -3,18 +3,31 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title>Document</title>
+	<!-- 初始化css -->
 	<link rel="stylesheet" type="text/css" href="css/Normalize Css 1.0.min.css">
+	<!-- css3 动画库 -->
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<!-- iconfont -->
 	<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+	<!-- iconfont库 -->
 	<link rel="stylesheet" type="text/css" href="css/slide.css">
+	<!-- 主样式 -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!-- jquery库 -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- banner js -->
+	<script type="text/javascript" src="js/slide.js"></script>
+	<!-- 旋转模板js  -->
+	<script type="text/javascript" src="js/gallery_init.js"></script>
+	<script type="text/javascript" src="js/roundabout.js"></script>
+	<script type="text/javascript" src="js/roundabout_shapes.js"></script>
 </head>
 <body>
 	<div class="header">
 		<div class="headerContent">
 			<a href="#" class="logo"><img src="images/logo.jpg" alt="" /></a>
-			<ul>
-				<li><a href="javascript:;">首页</a></li>
+			<ul >
+				<li><a href="javascript:;" class="active">首页</a></li>
 				<li><a href="javascript:;">我们的服务</a></li>
 				<li><a href="javascript:;">了解我们</a></li>
 				<li><a href="javascript:;">新闻动态</a></li>
@@ -22,10 +35,135 @@
 				<li><a href="javascript:;">联系我们</a></li>
 			</ul>
 			<div class="headerIcon">
-			
+				<span class="icon1">
+					<i class="iconfont">&#xe603;</i>
+				</span>
+				<span class="icon2">
+					<i class="iconfont">&#xe604;</i>
+				</span>
+				<span class="icon3">
+					<i class="iconfont">&#xe600;</i>
+				</span>
 			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="slides">
+		<div class="slideInner">
+			<a href="#" style="background: url(images/banner1.jpg) no-repeat top center;">
+				<div class="moveElem img1" rel="0,easeInOutExpo"> <img src="images/banner1Img.png" /> </div>
+				<div class="moveElem img2" rel="150,easeInOutExpo"> <img src="images/banner1Btn.png" /> </div>
+			</a>
+			<a href="#" style="background: url(images/banner2.jpg) no-repeat top center;">
+			</a>
+			<a href="#" style="background: url(images/banner3.jpg) no-repeat top center;">
+			</a>
+			
+		</div>
+		<div class="nav">
+			<a class="prev" href="javascript:;"></a>
+			<a class="next" href="javascript:;"></a>
+		</div>
+	</div>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".slideInner").slide({
+			slideContainer: $('.slideInner a'),
+			effect: 'easeOutCirc',
+			autoRunTime: 5000,
+			slideSpeed: 1000,
+			nav: true,
+			autoRun: true,
+			prevBtn: $('a.prev'),
+			nextBtn: $('a.next')
+		});
+	});
+	</script>
+	<div class="content">
+	<!-- about us Start -->
+		<div class="abouUs">
+			<h2><span class="title">上映？尚映！</span></h2>
+
+			<p>尚映是一个团队、尚映是我们的追求、尚映是每一个影片所要达到的，尚映，不只是上映。<br />
+			我们渴望让每一个影片完美呈现。</p>		
+			<h3>
+				<img src="images/ourService.jpg" alt="" />
+				<span class="title">服务</span>
+			</h3>
+			
+			<div class="serviceBanner">
+				<a href="#" class="service1"><img src="images/homeSever1.jpg" alt="" /><span class="text">商业<br />广告</span><span class="bg"></span></a>
+				<a href="#" class="service2 active"><img src="images/homeSever2.jpg" alt="" /><span class="text">影视<br />后期</span><span class="bg"></span></a>
+				<a href="#" class="service3"><img src="images/homeSever3.jpg" alt="" /><span class="text">影视<br />制作</span><span class="bg"></span></a>
+				<div class="clear"></div>
+			</div>
+		</div>
+	<!-- about us End -->
+
+		<div class="news">
+			
+		</div>
+
+	</div>
 
 
+
+	<div class="footer">
+		<div class="footerTop">
+			<div class="footerBox">
+				<div class="footerLeft">
+					<a class="icon1 item">
+						<i class="iconfont">&#xe604;</i>
+					</a>
+					<a class="icon2 item">
+						<i class="iconfont">&#xe600;</i>
+					</a>
+					<a class="icon3 item">
+						<i class="iconfont">&#xe602;</i>
+					</a>
+					<span class="tel">
+							010-5338-9228
+					</span>
+
+				</div>
+				<div class="contact">
+					<span class="QRcode">
+						<img src="images/QRcode.jpg" alt="" />
+					</span>
+					<ul>
+						<li>电话：010-53389228</li>
+						<li>手机：18701160600</li>
+						<li>邮箱：shangfilm@126.com</li>
+						<li>地址：北京市朝阳区双桥合美国际C座</li>
+					</ul>
+				</div>
+				<div class="address">
+					<img src="images/address.jpg" alt="" />
+				</div>
+			</div>
+		</div>
+		<div class="footerV">
+			<div class="footerBox">
+				<ul class="right">
+					<li><a href="#">栏目名称</a></li>
+					<li><a href="#">栏目名称</a></li>
+					<li><a href="#">栏目名称</a></li>
+					<li><a href="#">栏目名称</a></li>
+					<li><a href="#">栏目名称</a></li>
+					<li><a href="#">栏目名称</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footerBottom">
+			<div class="footerBox">
+				<div class="left">
+					COPYRIGHT 公司名称公司名称公司名称公司名称 京ICP备05020372号
+				</div>
+				<div class="right">
+					Powered by zimu
+				</div>
+			</div>
 		</div>
 	</div>
 </body>

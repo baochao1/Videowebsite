@@ -254,6 +254,7 @@
 		});
 		var total = $(settings.slideContainer).length;
 		$.fn.init(autoRun());
+		
 		$.each($(settings.slideContainer), function(i) {
 			$(this).css({
 				width: $(window).width(),
@@ -269,6 +270,15 @@
 			});
 		});
 		$("<ul style='width:" + ($(settings.slideContainer).length * 12 + ($(settings.slideContainer).length - 1) * 5) + "px;margin-left:-" + ($(settings.slideContainer).length * 12 + (($(settings.slideContainer).length - 1) * 5)) / 2 + "px' class='navListBox'>" + navlist + "</ul>").appendTo(el.parent());
+		$(window).resize(function() {
+			$.each($(settings.slideContainer), function(i) {
+				$(this).width($(window).width());
+			});
+			$.each($(this).children(), function(i) {
+				$(this).attr('offsetLeft', $(this).css('left'));
+			});
+		});
+
 		$(settings.slideContainer).eq(0).addClass("active");
 		if (settings.nav) $(".navListBox li a" + "[data-index=1]").addClass("active");
 		$(".navListBox li a").bind({
