@@ -87,6 +87,27 @@ ul{ margin: 0;}
 
 // -------------home abouUs end------------------
 
+
+// -------------home news start------------------
+.news{ width: 100%; height: 753px; background: url(../images/scroll_bg.jpg) no-repeat top center;
+	.title{ text-align: center; padding-top: 64px;}
+	.scrolllist{ margin:0 auto; width:1029px; height:428px; padding-top:14px; position:relative }
+	.scrolllist a.aleft{ display:block; background:url(../images/XscrollBtnLeft.png); width:47px; height:87px; position:absolute; left:-5px; top:99px; z-index:1;}
+	.scrolllist a.aright{display:block; background:url(../images/XscrollBtnRight.png); width:47px; height:87px;position:absolute; right:-5px; top:99px; z-index:1;}
+	.fbgt_title{ display:block; padding-top: 19px;}
+	.fb_button{ display:block; width:100px; height:30px; line-height:30px; background:#8e4622; text-align:center; margin:0 auto; margin-top:15px }
+	.imglist_w{ width:1029px; position:relative;height:428px; overflow:hidden}
+	.imglist_w ul.imglist{ position:absolute; width:200000px;}
+	.imglist_w ul.imglist li{ float:left;width:1029px; height:428px;}
+	.scroll-li{ text-align:center; }
+	.index_fb_img{ margin-bottom:18px;}
+}
+
+
+// -------------home news end------------------
+
+
+
 // -------------header start------------------
 .header{
 	.headerContent{ width: $mainWidth; margin: 0 auto; line-height: 72px;

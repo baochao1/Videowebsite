@@ -21,6 +21,8 @@
 	<script type="text/javascript" src="js/gallery_init.js"></script>
 	<script type="text/javascript" src="js/roundabout.js"></script>
 	<script type="text/javascript" src="js/roundabout_shapes.js"></script>
+	<!-- 左右滚动插件js -->
+	<script type="text/javascript" src="js/Xslider.js"></script>
 </head>
 <body>
 	<div class="header">
@@ -77,6 +79,10 @@
 			prevBtn: $('a.prev'),
 			nextBtn: $('a.next')
 		});
+
+	
+		$("#s2").Xslider({unitdisplayed:1,numtoMove:1,viewedSize:237,autoscroll:2000});
+
 	});
 	</script>
 	<div class="content">
@@ -100,11 +106,37 @@
 		</div>
 	<!-- about us End -->
 
-		<div class="news">
-			
-		</div>
-
 	</div>
+	<!-- news Start -->
+		<div class="news">
+			<div class="content">
+				<div class="title">
+					<img src="images/XscrollTitle.png" alt="" />
+				</div>
+				<div class="scrolllist" id="s2"> <a class="abtn aleft" href="#left"></a>
+
+				        <div class="imglist_w">
+				          <ul class="imglist"> 
+				         	 <li class="scroll-li">
+				         	 	<div class="img1">
+				         	 		<a href="#"><img src="images/scroll_1.jpg" alt="" /></a>
+				         	 	</div>
+				         	 	<div class="imgRight">
+				         	 		<a href="#" class="img2"><img src="images/scroll_2.jpg" alt="" /></a>
+				         	 		<a href="#" class="img3"><img src="images/scroll_3.jpg" alt="" /></a>
+				         	 		<a href="#" class="img4"><img src="images/scroll_4.jpg" alt="" /></a>
+				         	 		<a href="#" class="img5"><img src="images/scroll_5.jpg" alt="" /></a>
+				         	 	</div>
+
+				         	 </li>
+
+				          </ul>
+				        </div>
+				        <a class="abtn aright" href="#right" style="opacity: 0.4;"></a> 
+				</div>
+			</div>
+		</div>
+	<!-- news End -->
 
 
 
