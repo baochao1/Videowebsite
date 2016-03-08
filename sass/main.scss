@@ -91,16 +91,30 @@ ul{ margin: 0;}
 // -------------home news start------------------
 .news{ width: 100%; height: 753px; background: url(../images/scroll_bg.jpg) no-repeat top center;
 	.title{ text-align: center; padding-top: 64px;}
-	.scrolllist{ margin:0 auto; width:1029px; height:428px; padding-top:14px; position:relative }
-	.scrolllist a.aleft{ display:block; background:url(../images/XscrollBtnLeft.png); width:47px; height:87px; position:absolute; left:-5px; top:99px; z-index:1;}
-	.scrolllist a.aright{display:block; background:url(../images/XscrollBtnRight.png); width:47px; height:87px;position:absolute; right:-5px; top:99px; z-index:1;}
+	.scrolllist{ margin:0 auto; width:1200px; height:428px; padding-top:39px; position:relative }
+	.scrolllist a.aleft{ display:block; background:url(../images/XscrollBtnLeft.png); width:47px; height:87px; position:absolute; left:-5px; top:207px; z-index:1;}
+	.scrolllist a.aright{display:block; background:url(../images/XscrollBtnRight.png); width:47px; height:87px;position:absolute; right:-5px; top:207px; z-index:1;}
 	.fbgt_title{ display:block; padding-top: 19px;}
 	.fb_button{ display:block; width:100px; height:30px; line-height:30px; background:#8e4622; text-align:center; margin:0 auto; margin-top:15px }
-	.imglist_w{ width:1029px; position:relative;height:428px; overflow:hidden}
+	.imglist_w{ width:1029px; position:relative;height:428px; overflow:hidden; margin: 0 auto;}
 	.imglist_w ul.imglist{ position:absolute; width:200000px;}
 	.imglist_w ul.imglist li{ float:left;width:1029px; height:428px;}
-	.scroll-li{ text-align:center; }
+	.scroll-li{ text-align:center; position: relative;
+		.text{ background:rgba(235, 43, 106, 0.85);  width: 212px; padding: 23px; height: 169px; position: absolute; top: 0; left: 512px;
+			.time{ width: 59px; height: 55px; line-height: 27.5px; border-top:2px solid #fff; border-bottom:2px solid #fff; font-size: 20px; color: #fff;
+				span{ font-size: 15px;}
+			}
+			.valueText{ color: #f9f9f9; font-size: 14px; text-align: left;  padding-bottom: 12px;}
+			a.titleV{ font-size: 15px; text-align: left; display: block; color: #fff; font-weight: bold; line-height: 39px;}
+			a.btn{ display: block; width: 76px; height: 23px; font-size: 12px; border:1px solid #fff; line-height: 23px; color: #fff;}
+		}
+	}
 	.index_fb_img{ margin-bottom:18px;}
+	.img1{ width: 512px; height: 428px; float: left;}
+	.imgRight{ float: left; height: 428px; width: 516px;
+		a{ display: block; width: 258px; height: 214px; float:left;}
+	}
+	.agrayleft,.agrayright{ opacity: 0.5;}
 }
 
 
