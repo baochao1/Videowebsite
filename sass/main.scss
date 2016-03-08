@@ -88,6 +88,23 @@ ul{ margin: 0;}
 // -------------home abouUs end------------------
 
 
+// -------------work Start------------------
+.work{ width: 100%; height: 753px; background: url(../images/scroll_bg2.jpg) no-repeat top center;
+	.title{ text-align: center; padding-top: 70px;}
+}
+#gallery {margin:0 auto;height:457px;overflow:hidden; z-index:1; padding-top:51px;}
+.container_image{margin:0 auto;position:relative;width:100%;font-size:.8125em;}	
+.roundabout-holder{width:1033px;height:457px;margin:0 auto;}
+.roundabout-moveable-item {width: 646px;height: 416px;cursor: pointer;border:3px solid #ccc;border:3px solid rgba(0, 0, 0, 0.08);border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;}
+.roundabout-moveable-item img{width:100%;}
+.roundabout-in-focus {border:3px solid rgba(0, 0, 0, 0.2);}
+
+
+// -------------work end------------------
+
+
+
+
 // -------------home news start------------------
 .news{ width: 100%; height: 753px; background: url(../images/scroll_bg.jpg) no-repeat top center;
 	.title{ text-align: center; padding-top: 64px;}
