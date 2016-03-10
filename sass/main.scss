@@ -10,7 +10,7 @@ ul{ margin: 0;}
 .right{ float: right;}
 .content{ width: $mainWidth; margin:0 auto;}
 .clear{height:0px;clear:both;font-size:0px;line-height:0px;zoom: 1;}
-
+.ov{ overflow: hidden;}
 
 // -------------home abouUs start------------------
 .abouUs{
@@ -189,14 +189,22 @@ ul{ margin: 0;}
 			}
 		}
 		.headerIcon{ float: right; padding-right: 26px;
-			span{ display: inline-block; width: 30px; height: 30px;text-align: center; background: #4d4d4d; margin-right: 30px;margin-top: 20px; float: left;
+			a{ display: inline-block; width: 30px; height: 30px;text-align: center; background: #4d4d4d; margin-right: 30px;margin-top: 20px; float: left;
 				-webkit-border-radius: 50%;
 				-moz-border-radius: 50%;
 				border-radius: 50%;
+				img{ display: none; margin-left:0;
+					-webkit-transition:all 1s; 
+					-moz-transition:all 1s; 
+					-o-transition:all 1s; 
+					position: absolute; z-index: 999;
+				}
 				i{ color: #fff; line-height: 30px; font-size: 20px; }
 			}
-			span.icon2 i{ font-size: 23px;}
-			span.icon1 i{ font-size: 18px;}
+			a:hover{background: $mainColor;}
+			a:hover img{ display: inline-block; margin-left: -75px;margin-top: 40px;}
+			a.icon2 i{ font-size: 23px;}
+			a.icon1 i{ font-size: 18px;}
 		}
 	
 
@@ -244,9 +252,37 @@ ul{ margin: 0;}
 			ul{ padding-left: 20px; display: inline-block; color: #000; line-height: 28px;}
 		}
 		.address{ float: right;}
-
 	}
 	
  }
 
  // -------------footer end------------------
+
+
+ // --------------PageContent Start-------------------------
+
+ .PageContent{ background: #24272e;
+	.content{ width: 1000px; margin: 0 auto; overflow: hidden; padding-bottom: 37px;
+		h2{ font-size: 72px; text-align: center;color: #fff; font-weight: 400;}
+		.jzBanner{ border-top: 3px solid $mainColor;}
+		p{ font-size: 22px; line-height: 40px; color: #fff; text-indent: 2em; margin: 2em 0;}
+		.ov{ padding-bottom: 10px;}
+		.last{ padding-bottom: 32px;  border-bottom: 3px solid $mainColor;}
+		.relative{position: relative;
+			span{ background:$mainColor;background: rgba(235, 43, 106, 0.75); position: absolute;  width: 147px; height: 109px;line-height: 109px; color: #fff; font-size: 28px; text-align: center;}
+			span.bottomLeft{  right: 0; bottom: 0; }
+			span.bottomRirght{ left: 0; bottom: 0; }
+		}
+		.fist{ padding-bottom: 0;}
+		.fist div.left .relative,.fist div.right .relative{ margin-bottom: 10px;}
+		.hqMain{ margin-top: 45px; padding-top: 52px; border-top: 3px solid $mainColor;}
+		.hqMainBanner{ padding-bottom: 28px;}
+		.pB13{ padding-bottom: 13px;}
+
+	}
+
+
+ }
+
+
+// --------------PageContent End-------------------------
