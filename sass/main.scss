@@ -14,6 +14,7 @@ ul{ margin: 0;}
 
 // -------------home abouUs start------------------
 .abouUs{
+	overflow: hidden;
 	h2{ width:410px; height:88px; border:2px solid $mainColor; margin: 0 auto; margin-top: 49px; font-weight: normal;
 		span{ display: block; background: #fff; width: 414px; margin-left: -2px; height: 42px; font-size: 42px; color: #313131; text-align: center; margin-top: 24px; line-height: 42px;}
 	}
@@ -23,7 +24,7 @@ ul{ margin: 0;}
 		span{ display: block; width: 397px; margin: 0 auto; margin-bottom: -26px; background: #fff; font-size: 48px; color: $mainColor; font-weight: normal;}
 	}
 	.serviceBanner{ padding-top: 52px;  padding-bottom: 86px; 
-		a{ display: block; float: left; position: relative;
+		a{ display: block; float: left; position: relative;  
 			span.text{ width: 217px; height: 162px; padding-top: 55px; background: rgba(235, 43, 106, 0.56); display: inline-block; position: absolute;
 				left:50%; margin-left: -108px; top: 46px; font-size: 48px; text-align: center;color: #fff; line-height: 48px; 
 				-webkit-border-radius: 50%;
@@ -34,6 +35,7 @@ ul{ margin: 0;}
 				-moz-opacity:0.6;              
 				-khtml-opacity:0.6;              
 				opacity: 0.6;   
+
 			}
 			img{ position: absolute; left: 0; top: 0; z-index: 1;
 				-webkit-filter: grayscale(100%);
@@ -41,12 +43,18 @@ ul{ margin: 0;}
 				-ms-filter: grayscale(100%);
 				-o-filter: grayscale(100%);
 				filter: gray;
+				-webkit-transition:all 1s; 
+				-moz-transition:all 1s; 
+				-o-transition:all 1s; 
 			}
 			span.bg{ width: 164px; height: 164px; background: $mainColor; border-radius: 50%; display: block; position: absolute; top: 77px; left: 50%; margin-left: -82px; z-index: 2;
 				filter:alpha(opacity=0);       
 				-moz-opacity:0;              
 				-khtml-opacity:0;              
 				opacity: 0; 
+				-webkit-transition:all 1s; 
+				-moz-transition:all 1s; 
+				-o-transition:all 1s; 
 
 			}
 
@@ -95,29 +103,60 @@ ul{ margin: 0;}
 #gallery {margin:0 auto;height:457px;overflow:hidden; z-index:1; padding-top:51px;}
 .container_image{margin:0 auto;position:relative;width:100%;font-size:.8125em;}	
 .roundabout-holder{width:1033px;height:457px;margin:0 auto;}
-.roundabout-moveable-item {width: 646px;height: 416px;cursor: pointer;border:3px solid #ccc;border:3px solid rgba(0, 0, 0, 0.08);border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;}
+.roundabout-moveable-item {width: 646px;height: 416px;cursor: pointer;}
 .roundabout-moveable-item img{width:100%;}
-.roundabout-in-focus {border:3px solid rgba(0, 0, 0, 0.2);}
-
-
+.container_image a{ position: relative; }
+.container_image a span{     display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    background: rgba(235, 43, 106, 0.88);
+    height: 130px;
+    width: 260px; color: #fff; font-size: 28px; padding: 10px}
 // -------------work end------------------
 
+
+// -------------US Start------------------
+.us{ width: 100%; height: 778px; background: url(../images/sccrll_bg3.jpg) no-repeat top center; 
+	.title{ margin: 0; padding-top: 69px; text-align: center; }
+	.usMain{ position: relative;
+		.value{padding: 70px; background: #3e3f40; box-shadow: 0 0 10px 5px #A5A5A5; line-height: 43px; font-size: 20px; color: #fff; margin-top: 54px;}
+		a{ display: block; background: url(../images/btnBg.gif); margin: 0 auto; margin-top: -34px; width: 736px; height: 76px; font-size: 24px; text-align: center; color: #fff; line-height: 76px;}
+		.value2{ background: #ebecee ;margin-top: 54px; height: 1200px; height: 386px;
+			.value2Main{ width: 830px; margin: 0 auto; padding-top: 107px; }
+			.value2Main span{ display: block; padding-right: 25px; float: left; width: 126px; }
+			.value2Main ul{float: left; padding-left: 25px; font-size: 20px; color: #0e0e0e; line-height: 32px; border-left: 1px solid #969696; height: 126px;}
+		}
+	}
+}
+
+
+// -------------US end------------------
 
 
 
 // -------------home news start------------------
 .news{ width: 100%; height: 753px; background: url(../images/scroll_bg.jpg) no-repeat top center;
 	.title{ text-align: center; padding-top: 64px;}
-	.scrolllist{ margin:0 auto; width:1200px; height:428px; padding-top:39px; position:relative }
+	.scrolllist{ margin:0 auto; width:1200px; height:428px;position:relative }
 	.scrolllist a.aleft{ display:block; background:url(../images/XscrollBtnLeft.png); width:47px; height:87px; position:absolute; left:-5px; top:207px; z-index:1;}
 	.scrolllist a.aright{display:block; background:url(../images/XscrollBtnRight.png); width:47px; height:87px;position:absolute; right:-5px; top:207px; z-index:1;}
 	.fbgt_title{ display:block; padding-top: 19px;}
 	.fb_button{ display:block; width:100px; height:30px; line-height:30px; background:#8e4622; text-align:center; margin:0 auto; margin-top:15px }
-	.imglist_w{ width:1029px; position:relative;height:428px; overflow:hidden; margin: 0 auto;}
+	.imglist_w{ width:1029px; position:relative; height:428px; overflow:hidden; margin: 0 auto;  padding-top:39px; }
 	.imglist_w ul.imglist{ position:absolute; width:200000px;}
 	.imglist_w ul.imglist li{ float:left;width:1029px; height:428px;}
 	.scroll-li{ text-align:center; position: relative;
+		.hover{
+			-webkit-transform:scale(1.3) ; 
+			-moz-transform:scale(1.3); 
+			-o-transform:scale(1.3); 
+			/*transform-origin:0% 0%;*/
+		}
 		.text{ background:rgba(235, 43, 106, 0.85);  width: 212px; padding: 23px; height: 169px; position: absolute; top: 0; left: 512px;
+			-webkit-transition:all 1s; 
+			-moz-transition:all 1s; 
+			-o-transition:all 1s; 
 			.time{ width: 59px; height: 55px; line-height: 27.5px; border-top:2px solid #fff; border-bottom:2px solid #fff; font-size: 20px; color: #fff;
 				span{ font-size: 15px;}
 			}
@@ -140,7 +179,7 @@ ul{ margin: 0;}
 
 
 // -------------header start------------------
-.header{
+.header{ top:-200px;
 	.headerContent{ width: $mainWidth; margin: 0 auto; line-height: 72px;
 		a.logo{ display: inline-block; width: 141px; height: 34px; padding-top: 17px; float: left; }
 		ul  { font-size: 16px;float: left; padding-left: 260px; float: left;
@@ -162,11 +201,19 @@ ul{ margin: 0;}
 	
 
 	}
+	-webkit-transition:all 1s; 
+	-moz-transition:all 1s; 
+	-o-transition:all 1s; 
 }
-
+.fixed{position: fixed; top: 0; background: #fff; width: 100%; z-index: 999; box-shadow: 0 0 5px #888}
 // -------------header end------------------
 
-
+.Mail{ width: 100%; height: 452px; text-align: center; 
+	.top{ font-size: 62px; color: #4e4e4e; font-weight: bold; padding-top: 95px; padding-bottom: 40px;}
+	.bottom{ font-size: 40px; color: #eb2b6a; font-weight: bold; }
+	a{ display: block; width: 211px; height: 45px;  margin:0 auto;margin-top: 73px; background: #eb2b6a; color: #fff; font-size: 24px; line-height: 45px; border-radius: 20px; }
+	a:hover{ background: #de2d67; }
+}
  // -------------footer start------------------
  .footer{
 	.footerBox{ width:$mainWidth; margin:0 auto;} 
@@ -178,7 +225,7 @@ ul{ margin: 0;}
 	.footerTop{ background: #e9e9e9; padding-top: 68px;
 		.footerBox{ border-top: 1px solid #c0c0c0;  padding-top: 36px; padding-bottom: 74px;overflow: hidden;}
 		.footerLeft{ float: left; width: 404px; position: relative; height: 165px;
-			a{ position: absolute;}
+			a{ position: absolute; cursor: pointer;}
 			a:hover{ background: #ff0e65}
 			.item{ width: 81px; height: 81px; text-align: center; vertical-align: middle; background:#1b1b1b;
 				i{color: #fff; font-size: 60px; line-height: 81px}
