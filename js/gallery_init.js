@@ -1,7 +1,8 @@
 $(document).ready(function () {
     $('#myRoundabout').roundabout({
         shape: 'figure8',
-        minOpacity: 1
+        minScale: 0.7,
+        arrows:true
     });
     $('#myRoundabout li:first')
         .children('a')
