@@ -3,7 +3,7 @@ $mainWidth:1200px;
 $mainColor:#eb2b6a;
 $titleColor:#667d86;
 $borderColor:#e5e5e5;
-body{ font-family: 'Microsoft YaHei'}
+body{ font-family: 'Microsoft YaHei','微软雅黑'}
 a{ text-decoration: none;}
 ul{ margin: 0;}
 .left{ float: left;}
@@ -49,18 +49,18 @@ ul{ margin: 0;}
 				-ms-filter:brightness(.5);
 				-o-filter:brightness(.5);
 
-				-webkit-transition:all 1s; 
-				-moz-transition:all 1s; 
-				-o-transition:all 1s; 
+				-webkit-transition:all .5s; 
+				-moz-transition:all .5s; 
+				-o-transition:all .5s; 
 			}
 			span.bg{ width: 164px; height: 164px; background: $mainColor; border-radius: 50%; display: block; position: absolute; top: 77px; left: 50%; margin-left: -82px; z-index: 2;
 				filter:alpha(opacity=0);       
 				-moz-opacity:0;              
 				-khtml-opacity:0;              
 				opacity: 0; 
-				-webkit-transition:all 1s; 
-				-moz-transition:all 1s; 
-				-o-transition:all 1s; 
+				-webkit-transition:all .5s; 
+				-moz-transition:all .5s; 
+				-o-transition:all .5s; 
 
 			}
 
@@ -114,9 +114,9 @@ ul{ margin: 0;}
 .container_image{margin:0 auto;position:relative;width:100%;font-size:.1em;}	
 .roundabout-holder{width:650px;height:457px;margin:0 auto;}
 .roundabout-moveable-item {width: 795px;height: 445px;cursor: pointer;
-	-webkit-box-shadow: 0 0 26px #2a2a2a;
-	-moz-box-shadow: 0 0 26px #2a2a2a;
-	box-shadow: 0 0 26px #2a2a2a;
+	// -webkit-box-shadow: 0 0 26px #2a2a2a;
+	// -moz-box-shadow: 0 0 26px #2a2a2a;
+	// box-shadow: 0 0 26px #2a2a2a;
 }
 .roundabout-moveable-item img{width:100%;}
 .container_image a{ position: relative; }
@@ -168,9 +168,9 @@ ul{ margin: 0;}
 			/*transform-origin:0% 0%;*/
 		}
 		.text{ background:rgba(235, 43, 106, 0.85);  width: 212px; padding: 23px; height: 169px; position: absolute; top: 0; left: 512px;
-			-webkit-transition:all 1s; 
-			-moz-transition:all 1s; 
-			-o-transition:all 1s; 
+			-webkit-transition:all .5s; 
+			-moz-transition:all .5s; 
+			-o-transition:all .5s; 
 			.time{ width: 59px; height: 55px; line-height: 27.5px; border-top:2px solid #fff; border-bottom:2px solid #fff; font-size: 20px; color: #fff;
 				span{ font-size: 15px;}
 			}

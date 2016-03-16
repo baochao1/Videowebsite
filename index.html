@@ -47,9 +47,9 @@
 		<div class="headerContent">
 			<a href="#" class="logo"><img src="images/logo.jpg" alt="" /></a>
 			<ul >
-				<li><a href="javascript:toMove('.header');" class="active">首页</a></li>
-				<li><a href="javascript:toMove('.slides');">我们的服务</a></li>
+				<li><a href="javascript:toMove('html');" class="active">首页</a></li>
 				<li><a href="javascript:toMove('.abouUs');">了解我们</a></li>
+				<li><a href="javascript:toMove('.abouUsH3');">我们的服务</a></li>
 				<li><a href="javascript:toMove('.news');">新闻动态</a></li>
 				<li><a href="javascript:toMove('.work');">作品</a></li>
 				<li><a href="javascript:toMove('.us');">联系我们</a></li>
@@ -57,11 +57,11 @@
 			<div class="headerIcon">
 				<a class="icon1" href="javascript:;">
 					<i class="iconfont">&#xe603;</i>
-					<img src="images/QRcode1.gif" alt="" />
+					<img src="images/QRcode2.gif" alt="" />
 				</a>
 				<a class="icon2" href="http://weixin.sogou.com/gzh?openid=oIWsFt16elr7ClpW9Y7HiNoyMX68&ext=_vj5mXzN99ofBycmDiZkTerJ0Ypbsn62hxyT3Z7ROGWWDoIXIOQVhBOOWUDNhaAe">
 					<i class="iconfont">&#xe604;</i>
-					<img src="images/QRcode2.gif" alt="" />
+					<img src="images/QRcode1.gif" alt="" />
 				</a>
 				<a class="icon3" href="tencent://message/?uin=860865257&Menu=yes">
 					<i class="iconfont">&#xe600;</i>
@@ -75,7 +75,7 @@
 		<div class="slideInner">
 			<a href="#" style="background: url(images/banner1.jpg) no-repeat top center;">
 				<div class="moveElem img1" rel="0,easeInOutExpo"> <img src="images/banner1Img.png" /> </div>
-				<div class="moveElem img2" rel="150,easeInOutExpo"> <img src="images/banner1Btn.png" /> </div>
+				<div class="moveElem img2" rel="150,easeInOutExpo"> <img src="images/banner1Btn.png" /><img src="images/banner2Btn.png" style="display: none;" /> </div>
 			</a>
 			<a href="#" style="background: url(images/banner2.jpg) no-repeat top center;">
 			</a>
@@ -90,6 +90,14 @@
 	</div>
 	<script type="text/javascript">
 	$(document).ready(function() {
+		$('.img2').hover(function() {
+			$(this).find('img').eq(1).show();
+			$(this).find('img').eq(0).hide();
+		}, function() {
+			$(this).find('img').eq(0).show();
+			$(this).find('img').eq(1).hide();
+		});
+
 		$(".slideInner").slide({
 			slideContainer: $('.slideInner a'),
 			effect: 'easeOutCirc',
@@ -110,9 +118,9 @@
 		<div class="abouUs">
 			<h2 class=" wow fadeInUp animated"><span class="title">上映？尚映！</span></h2>
 
-			<p class="wow fadeInUp animated">尚映是一个团队、尚映是我们的追求、尚映是每一个影片所要达到的，尚映，不只是上映。<br />
+			<p class="wow fadeInUp animated abouUsH3">尚映是一个团队、尚映是我们的追求、尚映是每一个影片所要达到的，尚映，不只是上映。<br />
 			我们渴望让每一个影片完美呈现。</p>		
-			<h3>
+			<h3 >
 				<img src="images/ourService.jpg" alt="" />
 				<span class="title">服务</span>
 			</h3>
@@ -366,7 +374,7 @@
 	<script type="text/javascript">
 		function toMove(obj){ 
 			var topHeight = $(obj).offset().top;
-	        $("html,body").animate({scrollTop:topHeight-72},1000);
+	        $("html,body").animate({scrollTop:topHeight-72},500);
 		}
 		function nav(){
 			    var offsetTop = $(window).scrollTop();
