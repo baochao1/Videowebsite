@@ -115,7 +115,7 @@
 	</script>
 	<div class="content">
 	<!-- about us Start -->
-		<div class="abouUs">
+		<div class="abouUs" style="zoom: 1;">
 			<h2 class=" wow fadeInUp animated"><span class="title">上映？尚映！</span></h2>
 
 			<p class="wow fadeInUp animated abouUsH3">尚映是一个团队、尚映是我们的追求、尚映是每一个影片所要达到的，尚映，不只是上映。<br />
@@ -372,19 +372,20 @@
 	</div>
 
 	<script type="text/javascript">
+		nav();
 		function toMove(obj){ 
 			var topHeight = $(obj).offset().top;
 	        $("html,body").animate({scrollTop:topHeight-72},500);
 		}
 		function nav(){
 			    var offsetTop = $(window).scrollTop();
-			    if(offsetTop>100){ 
+			    if(offsetTop>50){ 
 			    	$('.header').addClass('fixed');
 				}else{ 
 					$('.header').removeClass('fixed');
 				}
 			};
-			nav();
+			
 		$(window).scroll(function(){
 	        nav();
    		});  
